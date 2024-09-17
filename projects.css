@@ -1,0 +1,46 @@
+.container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto 200px auto;
+    grid-template-areas:
+    "header header header"
+    "sidebar main pic"
+    "sidebar main pic"
+    ;
+}
+
+div {
+    background-color: rgb(226, 219, 231);
+    border: 2px solid rgb(64, 51, 66);
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+.header{ 
+    grid-area: header;
+}
+.sidebar{
+    grid-area: name;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: pic;
+}
+
+
+h2 {
+    font-size: 20px;
+    color: black;
+}
+h3 {
+    font-size: 15px;
+    color: rgb(73, 69, 81);
+    text-align: left;
+}
+figcaption {
+    font-size: 13px;
+    color: black;
+}

@@ -1,0 +1,38 @@
+.container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "header header"
+    "sidebar main"
+    "sidebar main";
+}
+
+div {
+    background-color: rgb(226, 219, 231);
+    border: 2px solid rgb(64, 51, 66);
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+.header{ 
+    grid-area: header;
+}
+.sidebar{
+    grid-area: name1;
+
+}
+.main{
+    grid-area: text1;
+}
+
+h2 {
+    font-size: 25px;
+    color: black;
+}
+h3{
+    font-size: 20px;
+    color: rgb(51, 47, 52);
+    text-align: left;
+}
